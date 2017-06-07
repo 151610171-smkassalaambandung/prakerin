@@ -14,3 +14,11 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('jualbeli', function(){
+	$a = App\produk::all();
+	$b = App\pengaturan::all();
+	$c = App\pengguna::all();
+	$d = App\Post::all();
+	return $a."</br></br>".$b."</br></br>".$c."</br></br>".$d;
+});
