@@ -34,11 +34,11 @@ class MyController extends Controller
     	$c = "3";
     	return view('latihan.seleksi', compact('a','b','c'));
     }
-    public function percobaan5()
+    public function param($buah)
     {
     	$buah = ['Mangga','Jeruk','Apel','Anggur','Manggis'];
     	$hewan = ['Kucing','Anjing','Lumba-lumba','Gajah','Harimau'];
     	$komputer = ['Lenovo','Hp','Acer','Toshiba','Samsung'];
-    	return view('latihan', compact('buah','hewan','komputer'));
+    	return view('latihan', array('buah','hewan','komputer'));
     }
 }
