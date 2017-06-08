@@ -22,3 +22,8 @@ Route::get('jualbeli', function(){
 	$d = App\Post::all();
 	return $a."</br></br>".$b."</br></br>".$c."</br></br>".$d;
 });
+
+// Latihan
+Route::get('/test','MyController@percobaan');
+Route::get('/test2','MyController@percobaan2');
+Route::get('/test3','MyController@percobaan3');
