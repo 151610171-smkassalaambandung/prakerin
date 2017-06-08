@@ -27,4 +27,18 @@ class MyController extends Controller
     	$c = "SMK Assalaam";
     	return view('latihan.saya', compact('a','b','c'));
     }
+    public function percobaan4()
+    {
+    	$a = "1";
+    	$b = "2";
+    	$c = "3";
+    	return view('latihan.seleksi', compact('a','b','c'));
+    }
+    public function percobaan5()
+    {
+    	$buah = ['Mangga','Jeruk','Apel','Anggur','Manggis'];
+    	$hewan = ['Kucing','Anjing','Lumba-lumba','Gajah','Harimau'];
+    	$komputer = ['Lenovo','Hp','Acer','Toshiba','Samsung'];
+    	return view('latihan', compact('buah','hewan','komputer'));
+    }
 }

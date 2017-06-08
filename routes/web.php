@@ -27,3 +27,5 @@ Route::get('jualbeli', function(){
 Route::get('/test','MyController@percobaan');
 Route::get('/test2','MyController@percobaan2');
 Route::get('/test3','MyController@percobaan3');
+Route::get('/test4','MyController@percobaan4');
+Route::get('/test5','MyController@percobaan5');
