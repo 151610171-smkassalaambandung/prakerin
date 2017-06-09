@@ -34,11 +34,15 @@ class MyController extends Controller
     	$c = "3";
     	return view('latihan.seleksi', compact('a','b','c'));
     }
-    public function param($buah)
+    public function faram($ata,$aa)
     {
-    	$buah = ['Mangga','Jeruk','Apel','Anggur','Manggis'];
-    	$hewan = ['Kucing','Anjing','Lumba-lumba','Gajah','Harimau'];
-    	$komputer = ['Lenovo','Hp','Acer','Toshiba','Samsung'];
-    	return view('latihan', array('buah','hewan','komputer'));
+        $koplak = ['hewan' => ['kucing' => ['persia', 'anggora', 'garong'],
+                                'ikan'=>['sepat','jaer','gurame'],
+                                'burung'=['merpati','beo','gagak']];
+                   'komputer' => [''=> ['', 'manggis', 'durian', 'naga'],
+                              ''
+                   'laptop' => ['polytron', 'lg', 'asus', 'acer']];
+$baru = $koplak[$ata];
+        return view('campuran', compact('baru','ata','aa');
     }
 }
