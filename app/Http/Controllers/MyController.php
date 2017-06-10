@@ -40,7 +40,7 @@ class MyController extends Controller
                                 'ikan'=>['sepat','jaer','gurame'],
                                 'burung'=>['merpati','beo','gagak']],
 
-                   'buah' => ['mangga'=> ['harumanis' , 'marijan'],
+                   'buah' => ['mangga'=> ['harumanis' , 'marijan','manis'],
                               'alpukat'=> ['hijau' , 'hitam'],
                               'apel'=> ['fuji' , 'hejo']],
 
@@ -48,10 +48,10 @@ class MyController extends Controller
                               'dell'=> ['Alienware' , 'inspiron'],
                               'acer'=> ['6930' , '7780']]
                               );
-    if($data){
+    if($data) {
         $query = (array_keys($array[$data]));
     }
-    if($data2){
+    if($data2) {
         $query = ($array[$data][$data2]);
     }                  
         return view('campuran', compact('query','data','data2'));
