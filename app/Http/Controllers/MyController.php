@@ -34,15 +34,27 @@ class MyController extends Controller
     	$c = "3";
     	return view('latihan.seleksi', compact('a','b','c'));
     }
-    public function faram($ata,$aa)
+    public function faram($data, $data2 = null)
     {
-        $koplak = ['hewan' => ['kucing' => ['persia', 'anggora', 'garong'],
+        $array = array ('hewan' => ['kucing' => ['persia', 'anggora', 'garong'],
                                 'ikan'=>['sepat','jaer','gurame'],
-                                'burung'=['merpati','beo','gagak']];
-                   'komputer' => [''=> ['', 'manggis', 'durian', 'naga'],
-                              ''
-                   'laptop' => ['polytron', 'lg', 'asus', 'acer']];
-$baru = $koplak[$ata];
-        return view('campuran', compact('baru','ata','aa');
+                                'burung'=>['merpati','beo','gagak']],
+
+                   'buah' => ['mangga'=> ['harumanis' , 'marijan'],
+                              'alpukat'=> ['hijau' , 'hitam'],
+                              'apel'=> ['fuji' , 'hejo']],
+
+                    'komputer' => ['asus'=> ['456UR' , '456'],
+                              'dell'=> ['Alienware' , 'inspiron'],
+                              'acer'=> ['6930' , '7780']]
+                              );
+    if($data){
+        $query = (array_keys($array[$data]));
+    }
+    if($data2){
+        $query = ($array[$data][$data2]);
+    }                  
+        return view('campuran', compact('query','data','data2'));
+    
     }
 }

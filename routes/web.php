@@ -28,7 +28,7 @@ Route::get('/test','MyController@percobaan');
 Route::get('/test2','MyController@percobaan2');
 Route::get('/test3','MyController@percobaan3');
 Route::get('/test4','MyController@percobaan4');
-Route::get('ata/{ata?}/{aa?}','MyController@faram');
+Route::get('/loop/{data?}/{data2?}','MyController@faram');
 
 
 

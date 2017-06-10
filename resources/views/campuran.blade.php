@@ -4,14 +4,13 @@
 	<title>Ini Halaman Index</title>
 </head>
 <body>
-
-	DAFTAR : <b>{{$ata}} {{$aa}}</b>
-	@foreach ($baru as $bina)
+	DAFTAR : <b>{{$data}} {{$data2}}</b>
+	@foreach ($query as $key)
 	<ul>
-	<li>{{ $bina }}</li>
+	<li>{{ $key }}</li><hr>
 	</ul>
+	
 	@endforeach
-
 
 </body>
 </html>
