@@ -29,7 +29,7 @@ Route::get('/test2','MyController@percobaan2');
 Route::get('/test3','MyController@percobaan3');
 Route::get('/test4','MyController@percobaan4');
 Route::get('/loop/{data?}/{data2?}','MyController@faram');
-Route::get('/coba/{id}','SiswaController@percobaan5');
+Route::get('/coba/{nama}','SiswaController@percobaan5');
 
 
 
